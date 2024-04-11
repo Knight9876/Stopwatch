@@ -1,0 +1,69 @@
+@font-face {
+    font-family: myFont;
+    src: url(digital.ttf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: black;
+}
+
+.stopwatch, .buttons {
+    color: white;
+    display: flex;
+    top: 50%;
+    left: 50%;
+    transform: translate(-115%, -80%);
+    position: fixed;
+    font-size: 6rem;
+    font-family: myFont;
+    gap: 2rem;
+}
+
+.buttons {
+    transform: translate(-130%, 100%);
+    gap: 5rem;
+}
+
+button {
+    border-radius: 1rem;
+    padding: 1rem;
+    border-color: magenta;
+    border-width: 0.3rem;
+}
+
+.start-button, .stop-button, .reset-button, .lap-button {
+    font-size: 2rem;
+    visibility: hidden;
+}
+
+.stop-button {
+    margin-right: -11.45rem;
+    background-color: red;
+}
+
+.start-button {
+    background-color: aqua;
+    visibility: visible;
+}
+
+.lap-button {
+    background-color: lime;
+}
+
+.reset-button {
+    background-color: rgb(254, 254, 57);
+}
+
+.laps {
+    font-size: 3rem;
+    display: flex;
+    font-family: myFont;
+    left: 75%;
+    position: absolute;
+    color: white;
+}
